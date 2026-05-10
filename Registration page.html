@@ -1,37 +1,72 @@
 <html>
-<head><title>Registration page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-</head>
 <style>
-form
-{
-height :350px;
-width :370px;
-background-color :lavender;
+input{
+    background-color: rgba(51, 51, 51, 0.023);
+    border: double;
+    border-radius: 2px;
+    border-color: rgba(104, 103, 103, 0.283);
+    height: 40px;
+    width:275px;
+    border-radius: 20px;
+    text-align: center;
 }
-main
+div
 {
-height :420px;
-width :460px;
-background-color :gray;
+background-color: silver;
+width: 500;
+height: 450;
+border-radius: 1000px;
+border: double;
+border-color: gray;
+}
+div:hover
+{
+    background-image: url('171280.jpg');
+    background-size: cover;
+}
+.border
+{
+background-image: url('171280.jpg');
+background-size: cover;
+width: 600;
+height: 500;
+border-radius: 1000px;
+border: none;
+}
+body
+{
+background-color: pink;
+color: silver;
+}
+body:hover
+{
+    background-image: url('194552.jpg');
+    background-size: cover;
+}
+input[type=button],[type=text],[type=password],[type=email]
+{
+background-color: Black;
+color: red;
+}
+input[type=button]:hover
+{
+background-color: pink;
+color: White;
 }
 </style>
-<body><br><br><br><br><center>
-<main><br><form><h3><br>
-<center>Register here:</center><br><br>
-User Name:
-<input type="text" name="name" placeholder="Enter your name"><br><br>
-Email ID :
-<input type="email" name="em" placeholder="Enter your email ID"><br><br>
-Password :       
-<input type="password" name="p" placeholder="Enter your password"><br><br>
-Confirm password:
-<input type="password" name="cp" placeholder="Enter your confirm password"><br><br>
-Gender :
-<input type="radio" name="g" value="Male">Male
-<input type="radio" name="g" value="Female">Female
-<br><br>
-<input type="reset" value="  Reset  ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value=" Submit ">
-</form><br></main></center>
+<center>
+<body><br><br><br>
+<div class="border">
+<br>
+<div>
+<br><br><br><br><br>
+<input type="text" style="font-family:Chiller; font-size: 20px; color: aliceblue;" placeholder=" Enter your User name"></input><br><br>
+<input type="password" style="font-family:Chiller; font-size: 20px; color: aliceblue;" placeholder=" Enter your password" ></input><br><br>
+<input type="password" style="font-family:Chiller; font-size: 20px; color: aliceblue;" placeholder=" Enter Confirm password"></input><br><br>
+<input type="email" style="font-family:Chiller; font-size: 20px; color: aliceblue;" placeholder=" Enter your email"></input><br><br>
+<a href="Login.html"><input type="button" value="Login" tyle="font-family:Chiller; font-size: 20px;"></input></a>
+</div>
+</center>
+</div>
 </body>
 </html>
