@@ -1,0 +1,22 @@
+<html>
+    <title>Java Script</title>
+    <body>
+        <input type="text" id="user" placeholder="Enter your Username"><br><br>
+        <input type="password" id="pass"placeholder="Enter your password"><br><br>
+        <button onclick="login()">Login</button>
+        <p id="message" style="color:red;"></p>
+    <script>
+    function login(){
+        let usern= document.getElementById("user").value;
+        let passe= document.getElementById("pass").value;
+        if(usern=="AltroAlita" && passe=="14321Arlin"){
+            document.getElementById("message").innerHTML = "Login successful!";
+            window.location.href="file:///D:/Html/PersonalArtGallery.html";
+        }
+        else{
+            document.getElementById("message").innerHTML = "Invalid username or password";
+        }
+    }
+</script>
+<body></body>
+</html>
