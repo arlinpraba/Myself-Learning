@@ -1,0 +1,72 @@
+<html>
+<title>Personal Art Gallery</title>
+<style>
+td{
+height: 500px;
+width: 650px;
+}
+ul
+{
+list-style-type: none;
+margin: 0;
+padding: 12px;
+Background-color: black;
+overflow: hidden;
+}
+
+li
+{
+float: left;
+}
+a
+{
+    color: White;
+    background-color: black;
+    text-decoration: none;
+    padding: 12px;
+}
+a:hover
+{
+    color: black;
+    background-color: pink;
+}
+.drop
+{
+position: absolute;
+display: none;
+}
+.drop a
+{
+display: block;
+}
+.sub:hover .drop
+{
+display: block;
+}
+</style>
+<body style="background-image: url('mmm.png'); background-size: cover;">
+<ul>
+<li><a href="Home.html" target="view">Home</a></li>
+<li><a href="About.html" target="view"> About</a></li>
+<li><a href="Link page.html" target="view">Links</a></li>
+<li><a href="https://www.printful.com/dashboard/product-templates" target="view">Shop</a></li>
+
+<li class="sub"><a href="Gal.html" target="view">Gallery</a>
+<div class="drop">
+<a href="Doodles.html">Doodles</a>
+<a href="Pencil.html">Pencil Art</a>
+<a href="Gallery.html" >Digital Art</a>
+<a href="Traditional.html">Traditional Art</a>
+</div>
+</li>
+
+<li><a href="Login.html" >Sign in</a></li>
+
+<li style="float: right;"><a href="Logout.html">Log out</a></li>
+</ul>
+<table><tr><td>
+<iframe width="1256px" height="100%" name="view" style="background-image: url('mmm.png'); background-size: cover;"></iframe></td>
+</tr>
+</table>
+</body>
+</html>
