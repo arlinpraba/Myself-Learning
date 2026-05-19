@@ -1,0 +1,73 @@
+<html>
+<title>Personal Art Gallery</title>
+<style>
+td{
+height: 500px;
+width: 650px;
+}
+ul
+{
+list-style-type: none;
+margin: 0;
+padding: 12px;
+Background-color: black;
+overflow: hidden;
+}
+
+li
+{
+float: left;
+}
+a
+{
+    display: inline-block: ;
+    color: White;
+    background-color: black;
+    text-decoration: none;
+    padding: 12px;
+}
+a:hover
+{
+    color: black;
+    background-color: pink;
+}
+.drop
+{
+position: absolute;
+display: none;
+}
+.drop a
+{
+display: block;
+}
+.sub:hover .drop
+{
+display: block;
+}
+</style>
+<body>
+<ul>
+<li><a href="Login.html" >Login</a></li>
+
+<li class="sub"><a href="Gal.html" target="view">Outputs</a>
+<div class="drop">
+<a href="C:\xampp\htdocs\Textbox.php" target="view">Program Text</a>
+<a href="http://localhost/Textbox.php" target="vie">Program output</a>
+<a href="C:\xampp\htdocs\Name.php" target="view">Paintings? </a>
+<a href="http://localhost/Name.php" target="vie">Photos? </a>
+<a href="http://localhost/Textbox.php">Registor </a>
+</div>
+</li>
+<li><a href="first.html" target="view"> Looser</a></li>
+<li><a href="Text.html" target="vie">Winner</a></li>
+<li><a href="Gal.html" >Gallery</a></li>
+<li style="float: right;"><a href="Logout.html">Log out</a></li>
+</ul>
+<table><tr><td>
+<iframe width="99%" height="100%" name="view"></iframe></td>
+<td>
+<iframe width="99%" height="100%" name="vie"></iframe></td>
+</td></tr>
+</table>
+</body>
+</html>
