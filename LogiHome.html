@@ -1,0 +1,104 @@
+<html>
+<style>
+input{
+    background-color: rgba(51, 51, 51, 0.023);
+    border: double;
+    border-radius: 2px;
+    border-color: rgba(104, 103, 103, 0.283);
+    height: 40px;
+    width:275px;
+    border-radius: 20px;
+}
+div
+{
+background-color: silver;
+width: 500;
+height: 450;
+border-radius: 1000px;
+border: double;
+border-color: gray;
+}
+div:hover
+{
+    background-image: url('171280.jpg');
+    background-size: cover;
+}
+.border
+{
+background-image: url('171280.jpg');
+background-size: cover;
+width: 600;
+height: 500;
+border-radius: 1000px;
+border: none;
+}
+body
+{
+background-color: pink;
+color: silver;
+}
+body:hover
+{
+    background-image: url('background.jpeg');
+    background-size: cover;
+}
+input:hover
+{
+background-color: pink;
+color: rgb(1, 1, 1);
+font-family: Chiller;
+border-color: azure;
+border:groove;
+}
+input[type=button],[type=text],[type=password]
+{
+background-color: rgb(0, 0, 0);
+color: rgb(252, 252, 252);
+text-align: center;
+}
+button{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 251, 251);
+    font-family: Chiller;
+    font-size: 20px;
+    border-radius: 2px;
+    height: 40px;
+    width:275px;
+    border-radius: 20px;
+}
+button:hover
+{
+background-color: pink;
+color: rgb(1, 1, 1);
+font-family: Chiller;
+border-color: azure;
+}
+</style>
+<center>
+<body><br><br>
+<div class="border">
+<br>
+<div>
+<br><br><br><br><br><br><br><br>
+<input type="text" id="user" style="font-family:Chiller; font-size: 20px; color: aliceblue;" placeholder=" Enter your name"></input><br><br>
+<input type="password" id="pass" style="font-family:Chiller; font-size: 20px; color: aliceblue;" placeholder=" Enter your password" ></input><br><br>
+<button onclick="login()">Login</button>
+<p id="message" style="color:rgb(255, 255, 255); background-color: rgba(255, 0, 0, 0.438);border-radius: 10px; width:220px;"></p>
+</div>
+<script>
+    function login(){
+        let usern= document.getElementById("user").value;
+        let passe= document.getElementById("pass").value;
+        if(usern=="AltroAlita" && passe=="14321Arlin"){
+            document.getElementById("message").innerHTML = "Login successful!";
+            window.location.href="PersonalArtGallery.html";
+        }
+        else{
+            document.getElementById("message").innerHTML = "Invalid username or password";
+        }
+    }
+</script>
+</center>
+</div>
+</body>
+</html>
